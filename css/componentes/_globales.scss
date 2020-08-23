@@ -16,8 +16,8 @@ $font-size1: 25px;
 $font-size2: 20px;
 $font-size3: 15px;
 
-$font-weight1: 300px;
-$font-weight2:400px;
+$font-weight1: 300;
+$font-weight2: 400;
 $font-family: 'Public Sans', sans-serif;
 
 /*Mixins*/
@@ -25,22 +25,62 @@ $font-family: 'Public Sans', sans-serif;
     width: $width;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-image: url('../../design/active-states.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    font-family: $font-family;
+    box-sizing: border-box;
 }
 
 .nav {
-    background-color: gray;
-    opacity: 0.7;
     display: flex;
-    justify-content: space-between;
-    height: 60px;
-    @include Screen_size(100%);
-    color: black;
-    /*Incluir Version Desktop*/
-    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:$White;
+    opacity: 0.7;
+    width: 100%;
+    height: 5.5vmax;
+    border: 1px solid blue;
+    &__logo img{
+        width: 10vw;
+    }
+    &__enlaces {
+        border: 1px solid blue;
+        display: grid;
+        grid-template-columns: repeat(5, 12%);
+        justify-content: center;
+        grid-gap: 20px;
+        width: 30%;
+        height: 100%;
+        &__a {
+            display: inherit;
+            align-items: center;
+            justify-content: flex-end;
+            color: $Grayish-Blue;
+            font-weight: $font-weight2;
+            font-size: calc(0.5em + 0.5vw);
+            border: 1px solid red;
+        }
+        &__a:hover {
+            border-bottom: 4px solid green;
+            color: $Dark-Blue;
+        }
+    }
+    &__button {
+        background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        border-radius: 55px;
+        padding: 0.7vmax 1.8vmax;
+        border: 1px green solid;
+        &__a {
+            color: $White;
+            font-weight: $font-weight2;
+        }
+    }
 }
