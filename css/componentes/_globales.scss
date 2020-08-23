@@ -26,6 +26,7 @@ $font-family: 'Public Sans', sans-serif;
     border-radius: 55px;
     padding: $paddingtb $paddinglr;
     border: 1px green solid;
+    color: $White;
 }
 
 
@@ -36,9 +37,9 @@ body {
     padding: 0;
     font-family: $font-family;
     box-sizing: border-box;
-    //background-image: url('../../design/active-states.jpg');
-    //background-repeat: no-repeat;
-    //background-size: cover;
+    background-image: url('../../design/active-states.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -145,24 +146,47 @@ a {
         grid-template-columns: 45% 55%;
         position: absolute;
         &__texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             border: 1px solid red;
+            height: 100%;
+            margin: 0 0 20% 25%;
+            &__h1 {
+                font-size: calc(1.7em + 2vw);
+                color: $Dark-Blue;
+                font-weight: $font-weight1;
+                border: 1px solid red;
+                margin-bottom: 5px;
+            }
+            &__p {
+                font-size: calc(0.5em + 0.8vw);
+                border: 1px solid red;
+                color: $Grayish-Blue;
+                margin-bottom: 60px;
+            }
+            &__button {
+                width: 120px;
+                @include ButtonMixin(1vmax, 1.8vmax);
+            }
         }
-        &__imagen {
-            border: 1px solid red;
-            &--1 {
-                position: absolute;
+        section {
+            border: 2px solid blue;
+            overflow: hidden;
+            img {
+                border: 1px solid orange;
                 height: 900px;
-                margin-top: -150px;
                 background-size: cover;
+            }
+            .header__imagen--1 {
+                position: absolute;
                 z-index: -1;
                 border: 1px solid red;
+                margin-top: -140px;
             }
-            &--2 {
-                height: 850px;
-                margin-top: -30px;
-                background-size: cover;
-                margin-left: 20%;
-                z-index: 1;
+            .header__imagen--2 {
+                margin-top: -40px;
+                margin-left: 130px;
             }
         }
     }
