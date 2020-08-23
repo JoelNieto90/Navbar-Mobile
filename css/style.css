@@ -9,9 +9,6 @@ body {
   padding: 0;
   font-family: "Public Sans", sans-serif;
   box-sizing: border-box;
-  background-image: url("../../design/active-states.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 a {
@@ -24,8 +21,8 @@ a {
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  opacity: 0.7;
   height: 5.5vmax;
+  z-index: 3;
   border: 1px solid blue;
 }
 @media only screen and (max-width: 768px) {
@@ -33,7 +30,6 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: transparent;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -127,8 +123,33 @@ a {
 }
 
 /*Estilos del Header*/
-.header {
+.header__container {
   display: flex;
-  flex-direction: row;
-  border: 2px solid red;
+  flex-direction: column;
+}
+.header__container .header {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  position: absolute;
+}
+.header__container .header__texto {
+  border: 1px solid red;
+}
+.header__container .header__imagen {
+  border: 1px solid red;
+}
+.header__container .header__imagen--1 {
+  position: absolute;
+  height: 900px;
+  margin-top: -150px;
+  background-size: cover;
+  z-index: -1;
+  border: 1px solid red;
+}
+.header__container .header__imagen--2 {
+  height: 850px;
+  margin-top: -30px;
+  background-size: cover;
+  margin-left: 20%;
+  z-index: 1;
 }
