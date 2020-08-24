@@ -142,26 +142,27 @@ a {
   justify-content: center;
   border: 1px solid red;
   height: 100%;
-  margin: 0 0 15% 25%;
+  margin: 0 0 0 25%;
 }
 .header__container .header__texto__h1 {
   font-size: calc(1.7em + 2vw);
   color: #2d314d;
   font-weight: 300;
   border: 1px solid red;
-  margin-bottom: 5px;
+  margin-top: -15%;
 }
 .header__container .header__texto__p {
-  font-size: calc(0.5em + 0.8vw);
+  font-size: calc(0.6em + 0.7vw);
   border: 1px solid red;
   color: #9698a6;
-  margin-bottom: 65px;
+  margin-top: -3%;
+  padding-bottom: 20px;
 }
 .header__container .header__texto__button {
   width: 120px;
   background: linear-gradient(#31d35c, #2bb7da);
   border-radius: 55px;
-  padding: 1vmax 1.8vmax;
+  padding: 1.1vmax 1.8vmax;
   border: 1px green solid;
   color: white;
 }

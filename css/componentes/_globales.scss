@@ -151,23 +151,24 @@ a {
             justify-content: center;
             border: 1px solid red;
             height: 100%;
-            margin: 0 0 15% 25%;
+            margin: 0 0 0 25%;
             &__h1 {
                 font-size: calc(1.7em + 2vw);
                 color: $Dark-Blue;
                 font-weight: $font-weight1;
                 border: 1px solid red;
-                margin-bottom: 5px;
+                margin-top: -15%;
             }
             &__p {
-                font-size: calc(0.5em + 0.8vw);
+                font-size: calc(0.6em + 0.7vw);
                 border: 1px solid red;
                 color: $Grayish-Blue;
-                margin-bottom: 65px;
+                margin-top: -3%;
+                padding-bottom: 20px;
             }
             &__button {
                 width: 120px;
-                @include ButtonMixin(1vmax, 1.8vmax);
+                @include ButtonMixin(1.1vmax, 1.8vmax);
             }
         }
         section {
