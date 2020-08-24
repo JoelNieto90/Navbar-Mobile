@@ -256,8 +256,7 @@ a {
     flex-direction: column;
     width: 100%;
     top: 780px;
-    margin-bottom: 50px;
-    border: 3px solid red;
+    margin-bottom: 100px;
     background-color: $Very-Light-Gray;
     h3 {
         font-size: calc(1.4em + 1.3vw);
@@ -305,14 +304,13 @@ a {
     border: 1px solid rgb(46, 46, 128);
     background-color: $Dark-Blue;
     top: 730px;
-    padding: 45px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     &__logos {
         margin-left: 10%;
-        border: 1px solid yellow;
         &__principal {
             padding: 20px;
         }
@@ -326,8 +324,7 @@ a {
     }
     &__enlaces {
         display: flex;
-        border: 1px solid red;
-        width: 32%;
+        width: 35%;
         color: $White;
         ul {
             list-style: none;
@@ -343,7 +340,18 @@ a {
         }
     }
     &__button {
-        border: 1px solid yellow;
-        width: 30%;
+        width: 26%;
+        &__a {
+            width: 120px;
+            @include ButtonMixin(0.8vmax, 1.8vmax);
+            margin-left: 20%;
+        }
+        &__a:hover {
+            opacity: 0.7;
+        }
+        p {
+            color: $Grayish-Blue;
+            margin-top: 50px;
+        }
     }
 }
