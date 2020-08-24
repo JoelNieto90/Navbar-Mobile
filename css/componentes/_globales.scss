@@ -136,7 +136,7 @@ a {
         }
     }
     &__button:hover {
-        opacity: 0.7;
+        filter: contrast(0.5);
     }
 }
 
@@ -176,7 +176,7 @@ a {
                 @include ButtonMixin(1.1vmax, 1.8vmax);
             }
             &__button:hover {
-                opacity: 0.7;
+                filter: contrast(0.5);
             }
         }
         section {
@@ -288,6 +288,10 @@ a {
                 color: $Dark-Blue;
                 margin-left: 10%;
                 margin-right: 10%;
+                cursor: pointer;
+            }
+            h4:hover {
+                color: $Lime-Green;
             }
             p {
                 font-size: calc(0.5em + 0.5vw);
@@ -318,9 +322,6 @@ a {
             padding: 5px;
             cursor: pointer;
         }
-        img:hover {
-            background-color: $Lime-Green;
-        }
     }
     &__enlaces {
         display: flex;
@@ -347,7 +348,7 @@ a {
             margin-left: 20%;
         }
         &__a:hover {
-            opacity: 0.7;
+            filter: contrast(0.7);
         }
         p {
             color: $Grayish-Blue;

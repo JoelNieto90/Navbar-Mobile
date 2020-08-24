@@ -126,7 +126,7 @@ a {
   font-weight: 400;
 }
 .nav__button:hover {
-  opacity: 0.7;
+  filter: contrast(0.5);
 }
 
 /*Estilos del Header*/
@@ -172,7 +172,7 @@ a {
   color: white;
 }
 .header__container .header__texto__button:hover {
-  opacity: 0.7;
+  filter: contrast(0.5);
 }
 .header__container .header section {
   border: 2px solid blue;
@@ -280,6 +280,10 @@ a {
   color: #2d314d;
   margin-left: 10%;
   margin-right: 10%;
+  cursor: pointer;
+}
+.articles__section__noticias h4:hover {
+  color: #31d35c;
 }
 .articles__section__noticias p {
   font-size: calc(0.5em + 0.5vw);
@@ -308,9 +312,6 @@ a {
 .footer__logos__iconos img {
   padding: 5px;
   cursor: pointer;
-}
-.footer__logos img:hover {
-  background-color: #31d35c;
 }
 .footer__enlaces {
   display: flex;
@@ -342,7 +343,7 @@ a {
   margin-left: 20%;
 }
 .footer__button__a:hover {
-  opacity: 0.7;
+  filter: contrast(0.7);
 }
 .footer__button p {
   color: #9698a6;
