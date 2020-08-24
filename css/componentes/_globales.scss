@@ -37,9 +37,9 @@ body {
     padding: 0;
     font-family: $font-family;
     box-sizing: border-box;
-    /*background-image: url('../../design/active-states.jpg');
+    background-image: url('../../design/active-states.jpg');
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 a {
@@ -147,6 +147,7 @@ a {
         position: absolute;
         height: 100%;
         background-color: $Light-Grayish-Blue;
+        z-index: -3;
         &__texto {
             display: flex;
             flex-direction: column;
@@ -175,10 +176,10 @@ a {
         section {
             border: 2px solid blue;
             overflow: hidden;
-            height: 120%;
+            height: 125%;
             img {
                 border: 1px solid orange;
-                height: 850px;
+                height: 1000px;
                 background-size: cover;
             }
             .header__imagen--1 {
@@ -189,8 +190,8 @@ a {
             }
             .header__imagen--2 {
                 position: relative;
-                margin-top: -30px;
-                margin-left: 290px;
+                margin-top: -50px;
+                margin-left: 180px;
                 z-index: 2;
             }
         }
@@ -200,25 +201,48 @@ a {
 .main {
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    top: 630px;
+    top: 780px;
     border: 3px solid red;
     //background-color: $Very-Light-Gray;
     &__text {
         border: 3px solid green;
-        margin-left: 140px;
-        width: 45%;
+        margin-left: 11%;
+        width: 43%;
+        padding-bottom: 4%;
         &__h3 {
             color: $Dark-Blue;
             font-weight: $font-weight2;
-            font-size: calc(1.3em + 1.1vw);
+            font-size: calc(1.5em + 1.1vw);
         }
         &__p {
-            font-size: calc(0.6em + 0.5vw);
+            font-size: calc(0.6em + 0.6vw);
             border: 1px solid red;
             line-height: 23px;
-            margin-top: -10px;
             color: $Grayish-Blue;
+        }
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 1px solid orange;
+        grid-gap: 3.5%;
+        margin: 0 11% 0 11%;
+        &__article {
+            h5 {
+                color: $Dark-Blue;
+                font-weight: $font-weight2;
+                font-size: calc(0.7em + 1vw);
+            }
+            p {
+                color: $Grayish-Blue;
+                font-size: calc(0.5em + 0.45vw);
+                letter-spacing: 1px;
+                line-height: 25px;
+                margin-top: -10px;
+                font-weight: $font-weight2;
+            }
         }
     }
 }

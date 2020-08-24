@@ -9,9 +9,9 @@ body {
   padding: 0;
   font-family: "Public Sans", sans-serif;
   box-sizing: border-box;
-  /*background-image: url('../../design/active-states.jpg');
+  background-image: url("../../design/active-states.jpg");
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 a {
@@ -137,6 +137,7 @@ a {
   position: absolute;
   height: 100%;
   background-color: #f3f4f6;
+  z-index: -3;
 }
 .header__container .header__texto {
   display: flex;
@@ -170,11 +171,11 @@ a {
 .header__container .header section {
   border: 2px solid blue;
   overflow: hidden;
-  height: 120%;
+  height: 125%;
 }
 .header__container .header section img {
   border: 1px solid orange;
-  height: 850px;
+  height: 1000px;
   background-size: cover;
 }
 .header__container .header section .header__imagen--1 {
@@ -185,32 +186,53 @@ a {
 }
 .header__container .header section .header__imagen--2 {
   position: relative;
-  margin-top: -30px;
-  margin-left: 290px;
+  margin-top: -50px;
+  margin-left: 180px;
   z-index: 2;
 }
 
 .main {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  top: 630px;
+  top: 780px;
   border: 3px solid red;
 }
 .main__text {
   border: 3px solid green;
-  margin-left: 140px;
-  width: 45%;
+  margin-left: 11%;
+  width: 43%;
+  padding-bottom: 4%;
 }
 .main__text__h3 {
   color: #2d314d;
   font-weight: 400;
-  font-size: calc(1.3em + 1.1vw);
+  font-size: calc(1.5em + 1.1vw);
 }
 .main__text__p {
-  font-size: calc(0.6em + 0.5vw);
+  font-size: calc(0.6em + 0.6vw);
   border: 1px solid red;
   line-height: 23px;
-  margin-top: -10px;
   color: #9698a6;
+}
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid orange;
+  grid-gap: 3.5%;
+  margin: 0 11% 0 11%;
+}
+.main__cards__article h5 {
+  color: #2d314d;
+  font-weight: 400;
+  font-size: calc(0.7em + 1vw);
+}
+.main__cards__article p {
+  color: #9698a6;
+  font-size: calc(0.5em + 0.45vw);
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin-top: -10px;
+  font-weight: 400;
 }
