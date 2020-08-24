@@ -315,6 +315,10 @@ a {
         color: $Dark-Blue;
         font-weight: $font-weight1;
         margin-left: 10%;
+        @include media(mobile-only) {
+            text-align: center;
+            margin-left: 0;
+        }
     }
     &__section {
         display: grid;
@@ -322,6 +326,10 @@ a {
         grid-gap: 2%;
         margin: 0 10%;
         background-color: $White;
+        @include media(mobile-only) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
         &__noticias {
             img {
                 width: 100%;
@@ -334,13 +342,20 @@ a {
                 font-size: calc(0.4em + 0.4vw);
                 color: $Grayish-Blue;
                 margin-left: 10%;
+                @include media(mobile-only) {
+                    font-size: calc(0.5em + 0.5vw);
+                }
             }
             h4 {
                 font-size: calc(0.6em + 0.7vw);
                 color: $Dark-Blue;
                 margin-left: 10%;
                 margin-right: 10%;
+                font-weight: $font-weight1;
                 cursor: pointer;
+                @include media(mobile-only) {
+                    font-size: calc(0.8em + 0.8vw);
+                }
             }
             h4:hover {
                 color: $Lime-Green;
@@ -350,6 +365,9 @@ a {
                 color: $Grayish-Blue;
                 margin-left: 10%;
                 margin-right: 10%;
+                @include media(mobile-only) {
+                    font-size: calc(0.5em + 1.2vw);
+                }
             }
         }
     }
