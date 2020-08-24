@@ -9,9 +9,9 @@ body {
   padding: 0;
   font-family: "Public Sans", sans-serif;
   box-sizing: border-box;
-  background-image: url("../../design/active-states.jpg");
+  /*background-image: url('../../design/active-states.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 a {
@@ -135,19 +135,19 @@ a {
   display: grid;
   grid-template-columns: 45% 55%;
   position: absolute;
+  height: 100%;
 }
 .header__container .header__texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
   height: 100%;
-  margin: 0 0 0 25%;
+  margin: 16% 0 0 25%;
 }
 .header__container .header__texto__h1 {
   font-size: calc(1.7em + 2vw);
   color: #2d314d;
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid red;
   margin-top: -15%;
 }
@@ -169,10 +169,11 @@ a {
 .header__container .header section {
   border: 2px solid blue;
   overflow: hidden;
+  height: 120%;
 }
 .header__container .header section img {
   border: 1px solid orange;
-  height: 1000px;
+  height: 850px;
   background-size: cover;
 }
 .header__container .header section .header__imagen--1 {
@@ -182,6 +183,33 @@ a {
   margin-top: -140px;
 }
 .header__container .header section .header__imagen--2 {
+  position: relative;
   margin-top: -30px;
-  margin-left: 180px;
+  margin-left: 290px;
+  z-index: 2;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  top: 630px;
+  border: 3px solid red;
+}
+.main__text {
+  border: 3px solid green;
+  margin-left: 140px;
+  width: 45%;
+}
+.main__text__h3 {
+  color: #2d314d;
+  font-weight: 400;
+  font-size: calc(1.3em + 1.1vw);
+}
+.main__text__p {
+  font-size: calc(0.6em + 0.5vw);
+  border: 1px solid red;
+  line-height: 23px;
+  margin-top: -10px;
+  color: #9698a6;
 }
