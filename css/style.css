@@ -142,7 +142,7 @@ a {
   justify-content: center;
   border: 1px solid red;
   height: 100%;
-  margin: 0 0 20% 25%;
+  margin: 0 0 15% 25%;
 }
 .header__container .header__texto__h1 {
   font-size: calc(1.7em + 2vw);
@@ -155,7 +155,7 @@ a {
   font-size: calc(0.5em + 0.8vw);
   border: 1px solid red;
   color: #9698a6;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 .header__container .header__texto__button {
   width: 120px;
@@ -171,7 +171,7 @@ a {
 }
 .header__container .header section img {
   border: 1px solid orange;
-  height: 900px;
+  height: 1000px;
   background-size: cover;
 }
 .header__container .header section .header__imagen--1 {
@@ -181,6 +181,6 @@ a {
   margin-top: -140px;
 }
 .header__container .header section .header__imagen--2 {
-  margin-top: -40px;
-  margin-left: 130px;
+  margin-top: -30px;
+  margin-left: 180px;
 }
