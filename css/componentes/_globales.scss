@@ -37,9 +37,9 @@ body {
     padding: 0;
     font-family: $font-family;
     box-sizing: border-box;
-    background-image: url('../../design/active-states.jpg');
+    /*background-image: url('../../design/active-states.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 a {
@@ -144,12 +144,12 @@ a {
 .header__container {
     display: flex;
     flex-direction: column;
+    background-color: $Light-Grayish-Blue;
     .header {
         display: grid;
         grid-template-columns: 45% 55%;
         position: absolute;
         height: 100%;
-        background-color: $Light-Grayish-Blue;
         z-index: -3;
         &__texto {
             display: flex;
@@ -191,7 +191,6 @@ a {
             .header__imagen--1 {
                 position: absolute;
                 z-index: -1;
-                border: 1px solid red;
                 margin-top: -140px;
             }
             .header__imagen--2 {
@@ -210,10 +209,10 @@ a {
     flex-direction: column;
     width: 100%;
     top: 780px;
-    border: 3px solid red;
-    //background-color: $Very-Light-Gray;
+    padding-bottom: 25px;
+    z-index: -4;
+    background-color: $Very-Light-Gray;
     &__text {
-        border: 3px solid green;
         margin-left: 11%;
         width: 43%;
         padding-bottom: 4%;
@@ -224,7 +223,6 @@ a {
         }
         &__p {
             font-size: calc(0.6em + 0.6vw);
-            border: 1px solid red;
             line-height: 23px;
             color: $Grayish-Blue;
         }
@@ -232,7 +230,6 @@ a {
     &__cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        border: 1px solid orange;
         grid-gap: 2%;
         margin: 0 11% 0 11%;
         &__article {
@@ -248,6 +245,55 @@ a {
                 line-height: 25px;
                 margin-top: -10px;
                 font-weight: $font-weight2;
+            }
+        }
+    }
+}
+
+.articles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 780px;
+    border: 3px solid red;
+    background-color: $Very-Light-Gray;
+    h3 {
+        font-size: calc(1.4em + 1.3vw);
+        color: $Dark-Blue;
+        font-weight: $font-weight1;
+        margin-left: 10%;
+    }
+    &__section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2%;
+        margin: 0 10%;
+        background-color: $White;
+        &__noticias {
+            img {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 15px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            span {
+                font-size: calc(0.4em + 0.4vw);
+                color: $Grayish-Blue;
+                margin-left: 10%;
+            }
+            h4 {
+                font-size: calc(0.6em + 0.7vw);
+                color: $Dark-Blue;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            p {
+                font-size: calc(0.5em + 0.5vw);
+                color: $Grayish-Blue;
+                margin-left: 10%;
+                margin-right: 10%;
             }
         }
     }
