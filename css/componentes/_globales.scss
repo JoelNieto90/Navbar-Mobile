@@ -135,6 +135,9 @@ a {
             font-weight: $font-weight2;
         }
     }
+    &__button:hover {
+        opacity: 0.7;
+    }
 }
 
 /*Estilos del Header*/
@@ -171,6 +174,9 @@ a {
             &__button {
                 width: 120px;
                 @include ButtonMixin(1.1vmax, 1.8vmax);
+            }
+            &__button:hover {
+                opacity: 0.7;
             }
         }
         section {
@@ -227,7 +233,7 @@ a {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border: 1px solid orange;
-        grid-gap: 3.5%;
+        grid-gap: 2%;
         margin: 0 11% 0 11%;
         &__article {
             h5 {
