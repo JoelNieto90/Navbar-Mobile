@@ -255,10 +255,22 @@ a {
   z-index: -4;
   background-color: #fafafa;
 }
+@media only screen and (max-width: 768px) {
+  .main {
+    top: 700px;
+    text-align: center;
+  }
+}
 .main__text {
   margin-left: 11%;
   width: 43%;
   padding-bottom: 4%;
+}
+@media only screen and (max-width: 768px) {
+  .main__text {
+    margin: auto;
+    width: 60%;
+  }
 }
 .main__text__h3 {
   color: #2d314d;
@@ -276,10 +288,21 @@ a {
   grid-gap: 2%;
   margin: 0 11% 0 11%;
 }
+@media only screen and (max-width: 768px) {
+  .main__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .main__cards__article h5 {
   color: #2d314d;
   font-weight: 400;
   font-size: calc(0.7em + 1vw);
+}
+@media only screen and (max-width: 768px) {
+  .main__cards__article h5 {
+    font-size: calc(0.9em + 1vw);
+  }
 }
 .main__cards__article p {
   color: #9698a6;
@@ -288,6 +311,11 @@ a {
   line-height: 25px;
   margin-top: -10px;
   font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .main__cards__article p {
+    font-size: calc(0.6em + 0.8vw);
+  }
 }
 
 .articles {
