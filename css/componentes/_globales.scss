@@ -256,6 +256,7 @@ a {
     flex-direction: column;
     width: 100%;
     top: 780px;
+    margin-bottom: 50px;
     border: 3px solid red;
     background-color: $Very-Light-Gray;
     h3 {
@@ -296,5 +297,53 @@ a {
                 margin-right: 10%;
             }
         }
+    }
+}
+
+.footer {
+    position: relative;
+    border: 1px solid rgb(46, 46, 128);
+    background-color: $Dark-Blue;
+    top: 730px;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__logos {
+        margin-left: 10%;
+        border: 1px solid yellow;
+        &__principal {
+            padding: 20px;
+        }
+        &__iconos img{
+            padding: 5px;
+            cursor: pointer;
+        }
+        img:hover {
+            background-color: $Lime-Green;
+        }
+    }
+    &__enlaces {
+        display: flex;
+        border: 1px solid red;
+        width: 32%;
+        color: $White;
+        ul {
+            list-style: none;
+            padding-right: 80px;
+            li {
+                padding: 5px;
+                cursor: pointer;
+                font-size: calc(0.5em + 0.5vw);
+            }
+            li:hover {
+                color: $Lime-Green;
+            }
+        }
+    }
+    &__button {
+        border: 1px solid yellow;
+        width: 30%;
     }
 }
