@@ -136,6 +136,7 @@ a {
   grid-template-columns: 45% 55%;
   position: absolute;
   height: 100%;
+  background-color: #f3f4f6;
 }
 .header__container .header__texto {
   display: flex;
