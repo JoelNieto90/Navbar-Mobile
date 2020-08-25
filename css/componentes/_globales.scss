@@ -60,6 +60,8 @@ a {
         display: flex;
         flex-direction: column;
         height: 100%;
+        background-color: transparent;
+        z-index: 1;
     }
     &__logo {
         @include media(mobile-only) {
@@ -79,11 +81,11 @@ a {
             }
         }
         .toggle {
-            display: none;
             @include media(mobile-only) {
                 display: flex;
                 padding-right: 25px;
                 padding-top: 20px;
+                z-index: 3;
             }
         }
     }
@@ -96,14 +98,14 @@ a {
         width: 30%;
         height: 100%;
         @include media(mobile-only) {
-            display: none;
-            //display: block;
+            display: block;
             margin: 25px;
             padding: 30px 0 15px 0;
             width: 87%;
             text-align: center;
             background-color: $White;
             border-radius: 5px;
+            z-index: 1;
         }
         &__a {
             display: inherit;
@@ -155,6 +157,7 @@ a {
         @include media(mobile-only) {
             display: flex;
             flex-direction: row;
+            z-index: 0;
         }
         &__texto {
             display: flex;
@@ -213,6 +216,11 @@ a {
             }
             .header__imagen--mobile {
                 display: none;
+                @include media(mobile-only) {
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                }
             }
             .header__imagen--1 {
                 position: absolute;
@@ -247,7 +255,7 @@ a {
     z-index: -4;
     background-color: $Very-Light-Gray;
     @include media(mobile-only) {
-        top: 700px;
+        top: 400px;
         text-align: center;
     }
     &__text {
@@ -310,6 +318,9 @@ a {
     top: 780px;
     margin-bottom: 100px;
     background-color: $Very-Light-Gray;
+    @include media(mobile-only) {
+        top: 450px;
+    }
     h3 {
         font-size: calc(1.4em + 1.3vw);
         color: $Dark-Blue;
@@ -386,7 +397,7 @@ a {
     @include media(mobile-only) {
         display: flex;
         flex-direction: column;
-        top: 820px;
+        top: 500px;
     }
     &__logos {
         margin-left: 10%;
@@ -450,7 +461,7 @@ a {
             margin-top: 50px;
             @include media(mobile-only) {
                 margin-top: 20px;
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }

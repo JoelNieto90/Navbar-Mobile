@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <title>Mobile NavBar</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
-  <title>Mobile NavBar</title>
   <link rel="stylesheet" href="css/style.css">
-
+  <script>
+    $(function() {
+      $(".toggle").on("click", function() {
+          if ($(".item").hasClass("active")) {
+              $(".item").removeClass("active");
+              $(this).find("a").html("<i class='material-icons'>menu</i>");
+          } else {
+              $(".item").addClass("active");
+              $(this).find("a").html("<i class='material-icons'>clear</i>");
+          }
+      });
+  });
+  </script>
 </head>
 <body>
 
@@ -24,7 +35,7 @@
           </a>
           <a class="toggle" href="#"><i class="material-icons">menu</i></a>
       </section>
-      <section class="nav__enlaces">
+      <section class="item nav__enlaces">
           <a class="nav__enlaces__a" href="#">Home</a>
           <a class="nav__enlaces__a" href="#">About</a>
           <a class="nav__enlaces__a" href="#">Contact</a>
@@ -50,7 +61,7 @@
         <a class="header__texto__button" href="#">Request Invite</a>
       </section>
       <section class="header__imagen">
-        <img class="header__imagen--1" src="./images/bg-intro-mobile.svg" alt="Imagen del header" width="860px">
+        <img class="header__imagen--mobile" src="./images/bg-intro-mobile.svg" alt="Imagen del header" width="860px">
         <img class="header__imagen--1" src="./images/bg-intro-desktop.svg" alt="Imagen del header" width="860px">
         <img class="header__imagen--2" src="./images/image-mockups.png" alt="Imagen del header">
       </section>
@@ -167,5 +178,8 @@
       <p>© Easybank. All Rights Reserved</p>
     </section>
   </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
