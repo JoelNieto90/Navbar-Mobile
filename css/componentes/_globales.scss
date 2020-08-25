@@ -383,8 +383,16 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @include media(mobile-only) {
+        display: flex;
+        flex-direction: column;
+        top: 820px;
+    }
     &__logos {
         margin-left: 10%;
+        @include media(mobile-only) {
+            margin-left: 0;
+        }
         &__principal {
             padding: 20px;
         }
@@ -397,13 +405,26 @@ a {
         display: flex;
         width: 35%;
         color: $White;
+        @include media(mobile-only) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
         ul {
             list-style: none;
             padding-right: 80px;
+            @include media(mobile-only) {
+                padding: 0;
+                margin: 0;
+                font-size: calc(1.1em + 1.5vw);
+            }
             li {
                 padding: 5px;
                 cursor: pointer;
                 font-size: calc(0.5em + 0.5vw);
+                @include media(mobile-only) {
+                    padding: 10px;
+                }
             }
             li:hover {
                 color: $Lime-Green;
@@ -412,9 +433,13 @@ a {
     }
     &__button {
         width: 26%;
+        @include media(mobile-only) {
+            width: 50%;
+            margin-top: 20px;
+        }
         &__a {
             width: 120px;
-            @include ButtonMixin(0.8vmax, 1.8vmax);
+            @include ButtonMixin(1vmax, 1.8vmax);
             margin-left: 20%;
         }
         &__a:hover {
@@ -423,6 +448,10 @@ a {
         p {
             color: $Grayish-Blue;
             margin-top: 50px;
+            @include media(mobile-only) {
+                margin-top: 20px;
+                font-size: 14px;
+            }
         }
     }
 }
