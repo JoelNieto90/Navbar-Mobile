@@ -66,7 +66,25 @@ a {
 }
 .nav__logo .burger-button img {
   position: relative;
+  right: 40px;
+}
+.nav__logo .burger-button .Icono-burger {
+  position: relative;
+  top: 0;
+}
+.nav__logo .burger-button .Icono-burger.is-active {
+  position: relative;
+  top: -100vw;
+}
+.nav__logo .burger-button .Icono-close {
+  top: -100vw;
+  position: relative;
+}
+.nav__logo .burger-button .Icono-close.is-active {
+  display: block;
+  position: relative;
   right: 50px;
+  top: -60px;
 }
 @media only screen and (max-width: 768px) {
   .nav__logo .burger-button {
