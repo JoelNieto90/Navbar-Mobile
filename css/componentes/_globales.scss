@@ -80,7 +80,7 @@ a {
         /*Clase para controlar mi menu Burger*/
         .burger-button {
             display: none;
-            line-height: 40px;
+            line-height: 30px;
             img {
                 position: relative;
             }
@@ -97,8 +97,8 @@ a {
             .Icono-close {
                 top: -100vw;
                 position: relative;
-                width: 20px;
-                height: 20px;
+                width: 22px;
+                height: 22px;
                 &.is-active {
                     display: block;
                     position: relative;
