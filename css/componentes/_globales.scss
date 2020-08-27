@@ -25,7 +25,6 @@ $font-family: 'Public Sans', sans-serif;
     background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     border-radius: 55px;
     padding: $paddingtb $paddinglr;
-    border: 1px green solid;
     color: $White;
 }
 
@@ -55,7 +54,6 @@ a {
     background-color:$White;
     height: 5.5vmax;
     z-index: 3;
-    border: 1px solid blue;
     @include media(mobile-only) {
         display: flex;
         flex-direction: column;
@@ -114,7 +112,6 @@ a {
         }
     }
     &__enlaces {
-        border: 1px solid blue;
         display: grid;
         grid-template-columns: repeat(5, 12%);
         justify-content: center;
@@ -151,7 +148,6 @@ a {
             }
         }
         &__a:hover {
-            border-bottom: 4px solid green;
             color: $Dark-Blue;
             @include media(mobile-only) {
                 border-bottom: 0px;
@@ -203,12 +199,10 @@ a {
                 font-size: calc(1.7em + 2vw);
                 color: $Dark-Blue;
                 font-weight: $font-weight2;
-                border: 1px solid red;
                 margin-top: -15%;
             }
             &__p {
                 font-size: calc(0.6em + 0.7vw);
-                border: 1px solid red;
                 color: $Grayish-Blue;
                 margin-top: -3%;
                 padding-bottom: 20px;
@@ -228,14 +222,12 @@ a {
             }
         }
         section {
-            border: 2px solid blue;
             overflow: hidden;
             height: 125%;
             @include media(mobile-only) {
                 height: 40%;
             }
             img {
-                border: 1px solid orange;
                 height: 1000px;
                 background-size: cover;
                 @include media(mobile-only) {
@@ -416,7 +408,6 @@ a {
 
 .footer {
     position: relative;
-    border: 1px solid rgb(46, 46, 128);
     background-color: $Dark-Blue;
     top: 730px;
     padding: 40px 0;

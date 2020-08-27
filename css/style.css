@@ -26,7 +26,6 @@ a {
   background-color: white;
   height: 5.5vmax;
   z-index: 3;
-  border: 1px solid blue;
 }
 @media only screen and (max-width: 768px) {
   .nav {
@@ -92,7 +91,6 @@ a {
   }
 }
 .nav__enlaces {
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: repeat(5, 12%);
   justify-content: center;
@@ -133,7 +131,6 @@ a {
   }
 }
 .nav__enlaces__a:hover {
-  border-bottom: 4px solid green;
   color: #2d314d;
 }
 @media only screen and (max-width: 768px) {
@@ -145,7 +142,6 @@ a {
   background: linear-gradient(#31d35c, #2bb7da);
   border-radius: 55px;
   padding: 0.7vmax 1.8vmax;
-  border: 1px green solid;
   color: white;
 }
 @media only screen and (max-width: 768px) {
@@ -198,12 +194,10 @@ a {
   font-size: calc(1.7em + 2vw);
   color: #2d314d;
   font-weight: 400;
-  border: 1px solid red;
   margin-top: -15%;
 }
 .header__container .header__texto__p {
   font-size: calc(0.6em + 0.7vw);
-  border: 1px solid red;
   color: #9698a6;
   margin-top: -3%;
   padding-bottom: 20px;
@@ -218,7 +212,6 @@ a {
   background: linear-gradient(#31d35c, #2bb7da);
   border-radius: 55px;
   padding: 1.1vmax 1.8vmax;
-  border: 1px green solid;
   color: white;
 }
 @media only screen and (max-width: 768px) {
@@ -230,7 +223,6 @@ a {
   filter: contrast(0.5);
 }
 .header__container .header section {
-  border: 2px solid blue;
   overflow: hidden;
   height: 125%;
 }
@@ -240,7 +232,6 @@ a {
   }
 }
 .header__container .header section img {
-  border: 1px solid orange;
   height: 1000px;
   background-size: cover;
 }
@@ -444,7 +435,6 @@ a {
 
 .footer {
   position: relative;
-  border: 1px solid #2e2e80;
   background-color: #2d314d;
   top: 730px;
   padding: 40px 0;
@@ -525,7 +515,6 @@ a {
   background: linear-gradient(#31d35c, #2bb7da);
   border-radius: 55px;
   padding: 1vmax 1.8vmax;
-  border: 1px green solid;
   color: white;
   margin-left: 20%;
 }
