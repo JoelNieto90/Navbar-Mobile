@@ -17,11 +17,11 @@
           <a href="index.html">
             <img src="./images/logo.svg" alt="Logo del navbar">
           </a>
-          <i class="burger-button">
+          <i class="burger-button" id="burger-menu">
             <img src="/images/icon-hamburger.svg" alt="Icono de Menu">
           </i>
       </section>
-      <section class="item nav__enlaces is-active">
+      <section class="item nav__enlaces">
           <a class="nav__enlaces__a" href="#">Home</a>
           <a class="nav__enlaces__a" href="#">About</a>
           <a class="nav__enlaces__a" href="#">Contact</a>
@@ -167,6 +167,20 @@
 
   <script>
     console.log('Hola Consolita de JavaScript, Funcion!');
+    const nav__enlaces = document.querySelector('.nav__enlaces');
+    console.log(nav__enlaces);
+    const burgerButton = document.querySelector('#burger-menu');
+    console.log(burgerButton);
+
+    burgerButton.addEventListener('click', hideShow);
+
+    function hideShow() {
+      if(nav__enlaces.classList.contains('is-active')){
+        nav__enlaces.classList.remove('is-active');
+      }else{
+        nav__enlaces.classList.add('is-active');
+      }
+    }
   </script>
 
 </body>
