@@ -115,8 +115,8 @@ a {
         display: grid;
         grid-template-columns: repeat(5, 12%);
         justify-content: center;
-        grid-gap: 20px;
-        width: 30%;
+        grid-gap: 15px;
+        width: 35%;
         height: 100%;
         @include media(mobile-only) {
             display: block;
@@ -137,7 +137,7 @@ a {
         &__a {
             display: inherit;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
             color: $Grayish-Blue;
             font-weight: $font-weight2;
             font-size: calc(0.5em + 0.5vw);
@@ -149,6 +149,7 @@ a {
         }
         &__a:hover {
             color: $Dark-Blue;
+            border-bottom: 4px solid $Lime-Green;
             @include media(mobile-only) {
                 border-bottom: 0px;
             }
